@@ -33,6 +33,8 @@ public class Measures {
     String windStrength;
     String gustAngle;
     String gustStrength;
+    String windSpeed;
+    String visibility;
 
     public Measures() {
         beginTime = 0;
@@ -48,6 +50,8 @@ public class Measures {
         windStrength = STRING_NO_DATA;
         gustAngle = STRING_NO_DATA;
         gustStrength = STRING_NO_DATA;
+        windSpeed = STRING_NO_DATA;
+        visibility = STRING_NO_DATA;
 
     }
 
@@ -114,7 +118,22 @@ public class Measures {
     public void setMaxTemp(String maxTemp) {
         this.maxTemp = maxTemp;
     }
-
+    
+    public String getwindSpeed() {
+        return windSpeed;
+    }
+    
+    public void setwindSpeed(String windSpeed) {
+        this.windSpeed = windSpeed;
+    }
+    
+    public String getvisibility() {
+        return visibility;
+    }
+    
+    public void setvisibility(String visibility) {
+        this.visibility = visibility;
+    }
     public String getSum_rain_24(){ return sum_rain_24;}
 
     public void setSum_rain_24(String sum_rain_24){this.sum_rain_24 = sum_rain_24;}
@@ -142,8 +161,14 @@ public class Measures {
     public void setGustStrength(String gustStrength){this.gustStrength = gustStrength;}
 
     public String getGustStrength(){return gustStrength;}
-
-
-
+    
+    public String getwindSpeed(){return windSpeed;}
+    
+    public void setwindSpeed(String windSpeed){this.windSpeed = windSpeed;}
+    
+    public String visibility(){return visibility;}
+    
+    public void visibility(String visibility){this.visibility = visibility;}
+    
 
 }
